@@ -1,0 +1,12 @@
+body {
+	padding-bottom: 15px;
+}
+
+.justice {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#map { 
+	height: 390px; 
+}

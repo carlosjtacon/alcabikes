@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Alcabike</title>
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<br>
+	<div class="container">
+		<h1>APARCAMIENTOS DE BICICLETAS EN ALCALÁ</h1>
+		<br>
+		<div class="row">
+			<div class="col-md-8">
+				<div class="panel panel-primary">
+				  	<div class="panel-heading">
+				    	<h3 class="panel-title">Puntos de Aparcamiento Oficiales en Alcalá</h3>
+				  	</div>
+				  	<div class="panel-body">
+				    	<div id="map"></div>
+				  	</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<p class="justice">En el mapa se pueden ver los puntos oficiales de parking disponibles en Alcalá de Henares, gracias al botón "Encuentra mi Parking" se podrá calcular la localización actual e indicar qué parking se encuentra más cerca.</p>
+				<p>El Punto rojo indica la localización actual, el punto verde indica el aparcamiento de bicis más cercano.</p>
+				<div class="btn btn-primary btn-lg" onclick="geoMe()">Encuentra mi Parking</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src="https://api.tiles.mapbox.com/mapbox.js/plugins/turf/v2.0.0/turf.min.js"></script>
+	<script src="geolocation.js"></script>
+</body>
+</html>
